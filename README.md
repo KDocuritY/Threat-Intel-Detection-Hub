@@ -1,3 +1,4 @@
+```markdown
 # 🛡️ Actionable Threat Intelligence & Detection-as-Code Hub
 
 [![Detection Pack Store](https://img.shields.io/badge/Gumroad-Get_Full_Detection_Packs-ff90e8?style=for-the-badge&logo=gumroad&logoColor=black)](https://YOUR_GUMROAD_LINK)
@@ -43,13 +44,44 @@ FROM logs-endpoint.events.process-*
   AND NOT process.parent.executable LIKE "C:\\Windows\\CCM\\*"
 | STATS count = COUNT(*) BY host.name, user.name, process.command_line
 
+```
 
+**SentinelOne Deep Visibility (S1QL):**
 
-SentinelOne Deep Visibility (S1QL):
+```sql
 EventType = "Process Creation" 
 AND SrcProcName In Contains Anycase ("powershell.exe", "pwsh.exe") 
 AND (SrcProcCmdLine Contains Anycase "IEX" OR SrcProcCmdLine Contains Anycase "-enc") 
 AND NOT (ParentProcImagePath Contains Anycase "C:\Windows\CCM\")
 
-🚀 Upgrade Your SOC: Pro Detection Packs & Custom Engineering
-This repository provides 10% free community samples. Need full TTP coverage, pre-built Kibana dashboards, or custom query tuning for your specific enterprise schema?FeatureCommunity Repo (Free)📦 Pro Detection Bundle ($49)🛠️ Custom SecOps Gig (From $100)Curated IoC CSV Feeds✅ Included✅ Automated Weekly Script✅ Custom API IntegrationProduction Sigma Rules1~2 Sample Rules / wk50+ Full TTP RulesetTailored to Your LogsElastic (ES|QL, EQL, KQL)Basic SnippetsFull Query Pack IncludedCustom Index & Field MappingEDR (SentinelOne, Defender)Basic SnippetsFull Hunting Pack IncludedFalse-Positive Exception TuningKibana Dashboard (.ndjson)❌✅ 3 Executive Dashboards✅ Custom Built + Loom GuideAccess LinkYou are here👉 Download on Gumroad👉 Order on Fiverr💼 Need Python SecOps Automation?Looking to automate ThreatFox/MalwareBazaar IoC ingestion, build custom SOAR playbooks, or automate endpoint CLI scanning?📩 Contact for Private Consulting / Retainer: your_business_email@domain.com⚡ Direct Hire via Fiverr / Upwork: View SecOps Automation Services⚖️ Attribution & License (TLP:CLEAR)All Threat Intelligence back-data and IoCs are aggregated from publicly available OSINT sources (TLP:CLEAR). Full credit goes to the original researchers linked in each section.All IP addresses and URLs are defanged ([.], hxxp) to prevent accidental clicks.Detection rules (.yml, queries) in this repository are licensed under the MIT License.
+```
+
+---
+
+## 🚀 Upgrade Your SOC: Pro Detection Packs & Custom Engineering
+
+This repository provides **10% free community samples**. Need full TTP coverage, pre-built Kibana dashboards, or custom query tuning for your specific enterprise schema?
+
+| Feature | Community Repo (Free) | 📦 Pro Detection Bundle ($49) | 🛠️ Custom SecOps Gig (From $100) |
+| --- | --- | --- | --- |
+| **Curated IoC CSV Feeds** | ✅ Included | ✅ Automated Weekly Script | ✅ Custom API Integration |
+| **Production Sigma Rules** | 1~2 Sample Rules / wk | **50+ Full TTP Ruleset** | **Tailored to Your Logs** |
+| **Elastic (`ES|QL`, `EQL`, `KQL`)** | Basic Snippets | **Full Query Pack Included** | **Custom Index & Field Mapping** |
+| **EDR (`SentinelOne`, `Defender`)** | Basic Snippets | **Full Hunting Pack Included** | **False-Positive Exception Tuning** |
+| **Kibana Dashboard (`.ndjson`)** | ❌ | ✅ **3 Executive Dashboards** | ✅ **Custom Built + Loom Guide** |
+| **Access Link** | *You are here* | **[👉 Download on Gumroad](https://www.google.com/search?q=https://YOUR_GUMROAD_LINK)** | **[👉 Order on Fiverr](https://www.google.com/search?q=https://YOUR_FIVERR_LINK)** |
+
+### 💼 Need Python SecOps Automation?
+
+Looking to automate ThreatFox/MalwareBazaar IoC ingestion, build custom SOAR playbooks, or automate endpoint CLI scanning?
+
+* **📩 Contact for Private Consulting / Retainer:** `your_business_email@domain.com`
+* **⚡ Direct Hire via Fiverr / Upwork:** [View SecOps Automation Services](https://www.google.com/search?q=https://YOUR_FIVERR_LINK)
+
+---
+
+## ⚖️ Attribution & License (TLP:CLEAR)
+
+* All Threat Intelligence back-data and IoCs are aggregated from publicly available OSINT sources (**TLP:CLEAR**). Full credit goes to the original researchers linked in each section.
+* All IP addresses and URLs are **defanged** (`[.]`, `hxxp`) to prevent accidental clicks.
+* Detection rules (`.yml`, queries) in this repository are licensed under the **MIT License**.
