@@ -62,13 +62,13 @@ AND NOT (ParentProcImagePath Contains Anycase "C:\Windows\CCM\")
 This repository provides **10% free community samples**. Need full TTP coverage, pre-built Kibana dashboards, or custom query tuning for your specific enterprise schema?
 
 | Feature | Community Repo (Free) | 📦 Pro Detection Bundle ($49) | 🛠️ Custom SecOps Gig (From $100) |
-| --- | --- | --- | --- |
+| :--- | :---: | :---: | :---: |
 | **Curated IoC CSV Feeds** | ✅ Included | ✅ Automated Weekly Script | ✅ Custom API Integration |
 | **Production Sigma Rules** | 1~2 Sample Rules / wk | **50+ Full TTP Ruleset** | **Tailored to Your Logs** |
-| **Elastic (`ES|QL`, `EQL`, `KQL`)** | Basic Snippets | **Full Query Pack Included** | **Custom Index & Field Mapping** |
-| **EDR (`SentinelOne`, `Defender`)** | Basic Snippets | **Full Hunting Pack Included** | **False-Positive Exception Tuning** |
-| **Kibana Dashboard (`.ndjson`)** | ❌ | ✅ **3 Executive Dashboards** | ✅ **Custom Built + Loom Guide** |
-| **Access Link** | *You are here* | **[👉 Download on Gumroad](https://www.google.com/search?q=https://YOUR_GUMROAD_LINK)** | **[👉 Order on Fiverr](https://www.google.com/search?q=https://YOUR_FIVERR_LINK)** |
+| **Elastic (ES&#124;QL, EQL, KQL)** | Basic Snippets | **Full Query Pack Included** | **Custom Index & Field Mapping** |
+| **EDR (SentinelOne, Defender)** | Basic Snippets | **Full Hunting Pack Included** | **False-Positive Exception Tuning** |
+| **Kibana Dashboard (.ndjson)** | ❌ | ✅ **3 Executive Dashboards** | ✅ **Custom Built + Loom Guide** |
+| **Access Link** | *You are here* | **[👉 Download on Gumroad](https://YOUR_GUMROAD_LINK)** | **[👉 Order on Fiverr](https://YOUR_FIVERR_LINK)** |
 
 ### 💼 Need Python SecOps Automation?
 
