@@ -42,3 +42,14 @@ FROM logs-endpoint.events.process-*
   AND (process.command_line LIKE "*Invoke-WebRequest*" OR process.command_line LIKE "*-enc*")
   AND NOT process.parent.executable LIKE "C:\\Windows\\CCM\\*"
 | STATS count = COUNT(*) BY host.name, user.name, process.command_line
+
+
+
+SentinelOne Deep Visibility (S1QL):
+EventType = "Process Creation" 
+AND SrcProcName In Contains Anycase ("powershell.exe", "pwsh.exe") 
+AND (SrcProcCmdLine Contains Anycase "IEX" OR SrcProcCmdLine Contains Anycase "-enc") 
+AND NOT (ParentProcImagePath Contains Anycase "C:\Windows\CCM\")
+
+🚀 Upgrade Your SOC: Pro Detection Packs & Custom Engineering
+This repository provides 10% free community samples. Need full TTP coverage, pre-built Kibana dashboards, or custom query tuning for your specific enterprise schema?FeatureCommunity Repo (Free)📦 Pro Detection Bundle ($49)🛠️ Custom SecOps Gig (From $100)Curated IoC CSV Feeds✅ Included✅ Automated Weekly Script✅ Custom API IntegrationProduction Sigma Rules1~2 Sample Rules / wk50+ Full TTP RulesetTailored to Your LogsElastic (ES|QL, EQL, KQL)Basic SnippetsFull Query Pack IncludedCustom Index & Field MappingEDR (SentinelOne, Defender)Basic SnippetsFull Hunting Pack IncludedFalse-Positive Exception TuningKibana Dashboard (.ndjson)❌✅ 3 Executive Dashboards✅ Custom Built + Loom GuideAccess LinkYou are here👉 Download on Gumroad👉 Order on Fiverr💼 Need Python SecOps Automation?Looking to automate ThreatFox/MalwareBazaar IoC ingestion, build custom SOAR playbooks, or automate endpoint CLI scanning?📩 Contact for Private Consulting / Retainer: your_business_email@domain.com⚡ Direct Hire via Fiverr / Upwork: View SecOps Automation Services⚖️ Attribution & License (TLP:CLEAR)All Threat Intelligence back-data and IoCs are aggregated from publicly available OSINT sources (TLP:CLEAR). Full credit goes to the original researchers linked in each section.All IP addresses and URLs are defanged ([.], hxxp) to prevent accidental clicks.Detection rules (.yml, queries) in this repository are licensed under the MIT License.
