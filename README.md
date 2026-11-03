@@ -1,4 +1,3 @@
-```markdown
 # 🛡️ Actionable Threat Intelligence & Detection-as-Code Hub
 
 [![Detection Pack Store](https://img.shields.io/badge/Gumroad-Get_Full_Detection_Packs-ff90e8?style=for-the-badge&logo=gumroad&logoColor=black)](https://YOUR_GUMROAD_LINK)
