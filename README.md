@@ -74,7 +74,7 @@ This repository provides **10% free community samples**. Need full TTP coverage,
 
 Looking to automate ThreatFox/MalwareBazaar IoC ingestion, build custom SOAR playbooks, or automate endpoint CLI scanning?
 
-* **📩 Contact for Private Consulting / Retainer:** `your_business_email@domain.com`
+* **📩 Contact for Private Consulting / Retainer:** `KDocuritY@gmail.com`
 * **⚡ Direct Hire via Fiverr / Upwork:** [View SecOps Automation Services](https://www.google.com/search?q=https://YOUR_FIVERR_LINK)
 
 ---
